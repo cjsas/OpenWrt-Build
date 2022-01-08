@@ -8,3 +8,7 @@ jobs:
     uses: cjsas/OpenWrt-Build/.github/workflows/build-openwrt.yml@main
     with:
       target: x86-64
+  Build-r2s:
+    uses: cjsas/OpenWrt-Build/.github/workflows/build-openwrt.yml@main
+    with:
+      target: r2s
