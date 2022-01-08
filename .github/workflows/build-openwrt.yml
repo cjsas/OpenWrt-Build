@@ -18,8 +18,8 @@ on:
         type: string
 
 env:
-  REPO_URL: https://github.com/immortalwrt/immortalwrt
-  REPO_BRANCH: openwrt-21.02
+  REPO_URL: https://github.com/cjsas/immortalwrt
+  REPO_BRANCH: release/20220103
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: config/common.config
   TARGET_CONFIG_FILE: config/${{ inputs.target }}.config
