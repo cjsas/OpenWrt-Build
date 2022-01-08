@@ -11,15 +11,18 @@
 name: Build OpenWrt
 
 on:
-  repository_dispatch:
-  workflow_dispatch:
+  workflow_call:
+    inputs:
+      target:
+        required: true
+        type: string
 
 env:
   REPO_URL: https://github.com/immortalwrt/immortalwrt
   REPO_BRANCH: openwrt-21.02
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: config/common.config
-  TARGET_CONFIG_FILE: config/x86-64.config
+  TARGET_CONFIG_FILE: config/${{ inputs.target }}.config
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   TZ: Asia/Shanghai
