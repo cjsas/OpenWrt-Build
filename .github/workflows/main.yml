@@ -1,0 +1,10 @@
+name: BUILD
+
+on:
+  workflow_dispatch:
+  
+jobs:
+  Build-x86-64:
+    uses: cjsas/OpenWrt-Build/.github/workflows/build-openwrt.yml@main
+    with:
+      target: x86-64
