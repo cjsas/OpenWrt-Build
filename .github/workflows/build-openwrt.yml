@@ -19,7 +19,7 @@ on:
 
 env:
   REPO_URL: https://github.com/immortalwrt/immortalwrt
-  REPO_BRANCH: v21.02.4
+  REPO_BRANCH: v21.02.6
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: config/common.config
   TARGET_CONFIG_FILE: config/${{ inputs.target }}.config
