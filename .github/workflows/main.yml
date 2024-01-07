@@ -12,10 +12,6 @@ jobs:
     uses: cjsas/OpenWrt-Build/.github/workflows/build-openwrt.yml@main
     with:
       target: r2s
-  Build-rpi-3:
-    uses: cjsas/OpenWrt-Build/.github/workflows/build-openwrt.yml@main
-    with:
-      target: rpi-3
   Build-rpi-4:
     uses: cjsas/OpenWrt-Build/.github/workflows/build-openwrt.yml@main
     with:
